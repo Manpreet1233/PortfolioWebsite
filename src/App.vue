@@ -43,7 +43,9 @@
         </div>
         <about-content></about-content>
         <portfolio-content></portfolio-content>
+        <router-link to="/ArtGallery" class="gallery-link">Click Here to view my Art Gallery</router-link>
         <hobbies-content></hobbies-content>
+        <router-view/>
         <contact-content></contact-content>
         <footer-content></footer-content>
     </div>
@@ -91,7 +93,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: white;
     text-size-adjust: auto;
   }
 
@@ -347,95 +349,131 @@ export default {
     transform: scale(1.1);
   }
 
-  .contact {
-    margin-bottom: 0%;
-    position: center;
-  
-  }
-
-  .contact h1{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    position: relative;
-    font-size: 1.5rem;
-    border-bottom: 1px white;
-  }
-
-  .contact-heading::after {
-    content: '';
-    display: inline-block;
-    left: 42.5%;
-    width: 15%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    background: rgba(255,255,255,.3);
-  }
-
-  .contact-form{
-    background-color: #34393f;
-    color: white;
-    text-align: left;
-    width: 50%;
-    
-  } 
-
-  input,
-  select,
-  textarea{
-      width: 100%;
-      padding: 1rem;
-      margin-top: 5px;
-      border: none;
-      outline-color: rgb(74, 90, 85);
-      margin-bottom: 5px;
-  }
-
-  form{
-      width: 70%;
-      margin: 0 auto;
-  }
-
-  input[type="submit"]{
-    width: initial;
-    background-color: rgb(20, 21, 22);
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    cursor: pointer;
-    transition: background-color 650ms;
-}
-
-input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: #FFd544;
-}
-
-.copyright{
-  width: 100%;
-  text-align: center;
-  background-color: #17191b;
-  padding: 1rem 0;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.copyright p{
-    font-size: 1.3rem;
-}
-
-  
-.art {
-  color: white; 
-}
-
 .hobbies {
   text-transform: uppercase;
   font-family: Calisto MT;
   color: #fff;
   font-size: 7vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hobby-content h1 {
+  z-index: -1;
   opacity: 10%;
 }
+
+.hobbies h1 {
+  z-index: 1;
+  margin: 0;
+}
+
+.gallery-link {
+  color: white;
+  z-index: 2;
+  margin-top: 60px;
+}
+
+.art-description {
+  opacity:10%;
+  background: #292929;
+  color: #fff;
+  width: 35%;
+  margin-top: -10%;
+  margin-bottom: 10%; 
+  text-align: left;
+  padding-left: 10px;
+  font-family: Calisto MT;
+  position: relative;
+}
+
+@media only screen and (max-width: 479px){
+    .art-description { width: 100%; 
+    margin-top: 0.5%;
+    text-align: center;
+    
+    }
+}
+
+.contact {
+  margin-bottom: 0%;
+  position: center;
+}
+
+.contact h1{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  font-size: 1.5rem;
+  border-bottom: 1px white;
+}
+
+.contact-heading::after {
+  content: '';
+  display: inline-block;
+  left: 42.5%;
+  width: 15%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255,255,255,.3);
+}
+
+.contact-form{
+  background-color: #34393f;
+  color: white;
+  text-align: left;
+  width: 50%;
+  
+} 
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5px;
+    border: none;
+    outline-color: rgb(74, 90, 85);
+    margin-bottom: 5px;
+}
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type="submit"]{
+  width: initial;
+  background-color: rgb(20, 21, 22);
+  color: #eee;
+  padding: 1rem 2rem;
+  border-radius: .8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+  color: #221e3f;
+  background-color: #FFd544;
+}
+
+.copyright{
+width: 100%;
+text-align: center;
+background-color: #17191b;
+padding: 1rem 0;
+position: relative;
+margin-bottom: 0;
+color: #34393f;
+}
+
+.copyright p{
+  font-size: 1.3rem;
+}
+
+
 </style>
