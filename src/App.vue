@@ -44,10 +44,10 @@
         <about-content></about-content>
         <portfolio-content></portfolio-content>
         <router-link to="/ArtGallery" class="gallery-link">Click Here to view my Art Gallery</router-link>
-        <hobbies-content></hobbies-content>
+        <hobbies-content/>
         <router-view/>
-        <contact-content></contact-content>
-        <footer-content></footer-content>
+        <contact-content/>
+        <footer-content/>
     </div>
  </template>
 
@@ -389,12 +389,48 @@ export default {
 }
 
 @media only screen and (max-width: 479px){
-    .art-description { width: 100%; 
-    margin-top: 0.5%;
-    text-align: center;
-    
-    }
+  .art-description { width: 100%; 
+  margin-top: 0.5%;
+  text-align: center;
+  }
 }
+
+.block {
+  padding: 60px 0; 
+  border-bottom: 1px solid darken(#fff, 10%);
+}
+
+@media only screen and (max-width: 599px){
+  .block {
+  padding: 20px 0; 
+  }
+}
+
+h2 {
+  font-size: 30px; 
+  padding: 0 0 10px; 
+  margin: 0 0 40px; 
+  position: relative;
+}
+
+@media only screen and (max-width: 599 px) {
+  .h2 {
+      font-size: 24px; 
+      padding: 0 0 5px; 
+      margin: 0 0 25px; 
+  }
+}
+
+.block:after {
+  content: '';
+  background: #000; 
+  width: 60px; 
+  height: 1px; 
+  position: relative; 
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%);
+} 
 
 .contact {
   margin-bottom: 0%;
@@ -439,6 +475,7 @@ textarea{
     border: none;
     outline-color: rgb(74, 90, 85);
     margin-bottom: 5px;
+    color: white;
 }
 
 form{
@@ -462,13 +499,14 @@ input[type="submit"]:hover{
 }
 
 .copyright{
-width: 100%;
-text-align: center;
-background-color: #17191b;
-padding: 1rem 0;
-position: relative;
-margin-bottom: 0;
-color: #34393f;
+  width: 100%;
+  text-align: center;
+  background-color: #17191b;
+  padding: 1rem 0;
+  position: relative;
+  margin-bottom: 0;
+  color: #34393f;
+
 }
 
 .copyright p{

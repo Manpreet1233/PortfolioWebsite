@@ -5,6 +5,10 @@ import VueParticles from 'vue-particles'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import ArtGallery from './components/ArtGallery.vue'
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
+
+Vue.use(Vuetify);
 
 Vue.use(VueRouter)
 

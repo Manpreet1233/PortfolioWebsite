@@ -1,6 +1,7 @@
 <template>
     <div class="contact"> 
         <a id="contact"><h1 class="contact-heading">Contact</h1></a>
+               <i class="fa fa-envelope" aria-hidden="true"></i>
         <div>
             <form class="contact-form" @submit.prevent="sendEmail">
                 <label>Name</label>
