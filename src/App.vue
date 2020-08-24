@@ -46,7 +46,6 @@
         <router-link to="/ArtGallery" class="gallery-link">Click Here to view my Art Gallery</router-link>
         <hobbies-content/>
         <router-view/>
-        <contact-content/>
         <footer-content/>
     </div>
  </template>
@@ -56,7 +55,6 @@
 import AboutContent from './components/About.vue'
 import PortfolioContent from './components/portfolio.vue'
 import HobbiesContent from './components/Hobbies.vue'
-import ContactContent from './components/contact.vue'
 import FooterContent from './components/Footer.vue'
 
 export default {
@@ -65,7 +63,6 @@ export default {
     AboutContent,
     PortfolioContent,
     HobbiesContent,
-    ContactContent,
     FooterContent
   }
 }
@@ -397,7 +394,6 @@ export default {
 
 .block {
   padding: 60px 0; 
-  border-bottom: 1px solid darken(#fff, 10%);
 }
 
 @media only screen and (max-width: 599px){

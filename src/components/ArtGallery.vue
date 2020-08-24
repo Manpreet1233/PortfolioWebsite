@@ -3,15 +3,14 @@
     <div class="block galleryBlock">
         <v-row>
             <v-col
-              v-for="n in 9"
-              :key="n"
+              v-for="item in items"
+              :key="item.id"
               class="d-flex child-flex"
               cols="4"
             >
               <v-card flat tile class="d-flex">
                 <v-img
-                  :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                  :src="item.src"
                   aspect-ratio="1"
                   class="grey lighten-2"
                 >
@@ -33,7 +32,52 @@
 </template>
 
 <script>
+export default {
+    name: 'Gallery',
 
+    data() {
+        return {
+            items: [
+                {
+                    id: 1, 
+                    src: require("../assets/img/img1.jpg")
+                },
+                {
+                    id: 2, 
+                    src: require("../assets/img/img2.jpg")
+                },
+                {
+                    id: 3, 
+                    src: require("../assets/img/img3.jpg")
+                },
+                {
+                    id: 4, 
+                    src: require("../assets/img/img4.jpg")
+                },
+                {
+                    id: 5, 
+                    src: require("../assets/img/img6.jpg")
+                },
+                {
+                    id: 6, 
+                    src: require("../assets/img/img5.jpg")
+                },
+                {
+                    id: 7, 
+                    src: require("../assets/img/img7.jpg")
+                },
+                {
+                    id: 8, 
+                    src: require("../assets/img/img8.jpg")
+                },
+                {
+                    id: 9, 
+                    src: require("../assets/img/img9.jpg")
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <style scoped>
