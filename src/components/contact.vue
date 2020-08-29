@@ -1,41 +1,15 @@
 <template>
-    <div class="contact"> 
+  <div class="contact" data-aos="fade-up" data-aos-duration="1000" > 
         <a id="contact"><h1 class="contact-heading">Contact</h1></a>
-               <i class="fa fa-envelope" aria-hidden="true"></i>
-        <div>
-            <form class="contact-form" @submit.prevent="sendEmail">
-                <label>Name</label>
-                <input type="text" name="user_name">
-                <br>
-                <label>Email</label>
-                <input type="email" name="user_email">
-                <br>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </div>
+        <h6>Get In Touch!</h6>
+        <a href="mailto:manpreetrajpal7@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+  </div>
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
 
-export default {
-  methods: {
-    sendEmail: (e) => {
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-        .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-            console.log('FAILED...', error);
-        });
-    }
-  }
-}
 </script>
 
-<style scooped>
+<style scoped>
 
 </style>
