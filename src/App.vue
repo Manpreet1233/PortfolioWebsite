@@ -20,7 +20,7 @@
         <div class="main-title">
            <h2>Manpreet Rajpal</h2> 
            <br>
-           <a href="./Rajpal_Manpreet_Resume.pdf" class="button" value="open" target="_blank">Resume</a>
+           <a href="https://drive.google.com/file/d/1ywGwpBLbvnqN6l6Qx9Vm2QTsPEw1GRvY/view?usp=sharing" class="button" value="open" target="_blank">Resume</a>
         </div>
           <vue-particles
             color="#dedede"
