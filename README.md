@@ -1,4 +1,4 @@
-# portfolio   website: [a link](manpreetrajpal.ca)
+# portfolio   website: [manpreetrajpal.ca](manpreetrajpal.ca)
 
 ## Project setup
 ```
