@@ -361,7 +361,7 @@ h3 {
 
 .hobby-content h1 {
   z-index: -1;
-  opacity: 15%;
+
 }
 
 .hobbies h1 {
