@@ -1,4 +1,6 @@
-# portfolio   website: [manpreetrajpal.ca](manpreetrajpal.ca)
+# portfolio   website
+
+[![Watch the video]](https://www.youtube.com/watch?v=JvnPzzu20Do&ab_channel=manpreetrajpal)
 
 ## Project setup
 ```
