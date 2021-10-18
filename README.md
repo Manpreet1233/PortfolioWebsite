@@ -1,6 +1,6 @@
 # portfolio   website
 
-[![Watch the video]](https://www.youtube.com/watch?v=JvnPzzu20Do&ab_channel=manpreetrajpal)
+[Watch A Demo](https://www.youtube.com/watch?v=JvnPzzu20Do&ab_channel=manpreetrajpal)
 
 ## Project setup
 ```
