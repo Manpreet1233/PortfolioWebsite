@@ -1,4 +1,5 @@
-# [Portfolio Website](http://manpreetrajpal.ca/)
+# Portfolio Website
+# [manpreetrajpal.ca](http://manpreetrajpal.ca/)
 
 [Watch A Demo](https://www.youtube.com/watch?v=JvnPzzu20Do&ab_channel=manpreetrajpal)
 
